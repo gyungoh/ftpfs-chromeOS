@@ -1,0 +1,24 @@
+{
+	"name": "FTP File System",
+	"description": "Chrome OS Service for FTP File System",
+	"version": "0.1",
+	"manifest_version": 2,
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	},
+	"permissions": [
+		"fileSystemProvider"
+	],
+	"icons": { "128": "calculator-128.png" },
+	"file_system_provider_capabilities": {
+		"configurable": false,
+		"watchable": false,
+		"multiple_mounts": true,
+		"source": "network"
+	},
+	"sockets": {
+		"tcp" : { "connect" : "" }
+	}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		input {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+
+		div {
+		  position: absolute;
+		  text-align: center;
+		  width: 150px;
+		  left: 50%;
+		  top: 40%;
+		  transform: translateX(-50%);
+		  padding: 10px 25px;
+		  background-color: rgba(0, 0, 0, 0.7);
+		  border-radius: 10px;
+		  z-index: 11800;
+		  color: white;
+		  font-size: 2pc;
+		  visibility: visible;
+		  opacity: 1;
+		  transition: opacity 2s linear;
+		}
+	</style>
+	<title>FTP File System</title>
+	<script type="text/javascript" src="window.js"></script>
+</head>
+<body>
+	<label for="address">Server Address</label>
+	<input type="address" id="address" value="nuxinfo.net"/>
+	<label for="port">Port</label>
+	<input type="number" id="port" maxlength="5" value="21"/>
+	<label for="user">User</label>
+	<input type="text" id="user" value="drinkme"/>
+	<label for="password">Password</label>
+	<input type="password" id="password" value="dpffltm"/>
+	<input type="button" id="mount" value="Mount"/>
+	<input type="button" id="cancel" value="Cancel"/>
+	<div>Hi</div>
+</body>
+</html>
